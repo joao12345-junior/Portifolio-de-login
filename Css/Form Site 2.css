@@ -1,0 +1,102 @@
+:root {
+    --color-light-50: #f8fafc;
+
+    --color-dark-50: #797984;
+    --color-dark-100: #262429;
+    --color-dark-900: #000;
+
+    --color-gray-50: #b7b7b7;
+    --color-gray-100: #6f6f6f;
+    --color-gray-200: #272727;
+
+    --color-gradient: linear-gradient(10deg, var(--color-gray-50), var(--color-gray-100), var(--color-gray-200));
+    --color-gradient-button: linear-gradient(195deg, var(--color-gray-50), var(--color-gray-100), var(--color-gray-200));
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-dark-100);
+    color: var(--color-gray-50);
+    text-decoration: none;
+    box-sizing: border-box;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+}
+#clients_form{
+    display: flex;
+    margin: 15px;
+    gap: 15px;
+    width: 100%;
+    max-width: 415px;
+}
+.inputs{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+}
+.inputs_id{
+    display: flex;
+    border: 5px solid var(--color-gray-100);
+    border-radius: 10px;
+    padding: 10px;
+    gap: 10px;
+    width: 100%;
+}
+.input{
+    display: flex;
+    border: 0px solid transparent;
+    width: 100%;
+    margin-top: 10px;
+    padding-bottom: 2px;
+    border-bottom: 2px solid var(--color-dark-50);
+}
+.input::placeholder{
+    text-align: center;
+}
+.label{
+    width: 100%;
+    cursor: pointer;
+}
+#send{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+#buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+.button{
+    padding: 5px;
+    text-align: center;
+    width: 100px;
+    cursor: pointer;
+}
+
+#Header-content {
+    padding: 10px;
+    text-align: center;
+}
+.Table{
+    margin: 15px;
+    cursor: default;
+    margin-left: 0px;
+}
+#tbody td {
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<meta charset="UTF-8" />
+
+<title>Site 2</title>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="Css/Form Site 2.css " media="screen" />
+    <script src="Js/Storage.js" defer></script>
+    <script src="Js/JavaScript Site 2.js" defer></script>
+</head>
+
+<body>
+    <section id="clients">
+        <form id="clients_form">
+            <div class="inputs">
+                <div class="inputs_id">
+                    <label class="label" for="insertID">Mudar id
+                        <input id="insertID" class="input" type="number" placeholder="Coloque o id"></input>
+                    </label>
+                </div>
+                <div class="inputs_id">
+                    <label class="label" for="insertNameId">Mudar o nome do id
+                        <input id="insertNameId" class="input" type="text"
+                            placeholder="Coloque o nome do novo id"></input>
+                    </label>
+                </div>
+                <div class="inputs_id">
+                    <label class="label" for="insertNumberOfClients">Quantidade clientes criados
+                        <input id="insertNumberOfClients" class="input" type="number"
+                            placeholder="Coloque o numero de clientes"></input>
+                    </label>
+                </div>
+
+                <button type="submit" id="send" onclick="Enviar()">Enviar</button>
+            </div>          
+            <p id="buttons">
+                <button class="button" onclick="getClients()">Pegar Clientes</button>
+                <button class="button" onclick="removeClient()" title="Clique no linha e depois no botão">Remover Cliente</button>
+            </p>
+        </form>
+        <div class="Table">
+            <table id="Table" border="1">
+                <thead id="Header">
+                    <th id="Header-content">Index</th>
+                    <th id="Header-content">Id</th>
+                    <th id="Header-content">Nome</th>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>
